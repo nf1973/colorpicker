@@ -17,6 +17,7 @@ body {font-family: Arial, Helvetica, sans-serif;
 
 canvas {
   display: block;
+  border: 1px solid #666;
 }
 
 .el{
