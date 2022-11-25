@@ -1,5 +1,5 @@
 
-//Colorpicker v0.3
+//Colorpicker v0.5
 //20th November 2022
 //By Neil
 
