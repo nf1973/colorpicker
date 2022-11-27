@@ -7,45 +7,61 @@
 body {font-family: Arial, Helvetica, sans-serif;
   font-size:20pt; 
   display: grid;
-  grid-template-columns: repeat(8, 1fr);
-  grid-auto-rows: 25px calc(100vh - 70px) 45px;
-  grid-template-areas: 
-      "hd hd hd hd hd hd hd hd"
-      "sl mn mn mn mn mn mn sr"
-      "ft ft ft ft ft ft ft ft";
-  gap: 0.1rem;}
-
-canvas {
-  display: block;
-  border: 1px solid #666;
 }
 
-.el{
-  color: #000;
+.container-grid {
   display: grid;
-  place-content: center;
+  grid-template-columns: 100%;
+  grid-template-rows: 75px auto 60px;
+}
+
+/*.container-item {} */
+
+.header-grid {
+  display: grid; 
+  grid-template-columns: 60px 200px auto;
+  grid-template-rows: 60px; 
+}
+
+/*.header-grid-item {} */
+
+.header-logo {
+  background-color: #fff;
+  background-image: url(neil2.png);
+  background-size: cover;
+  margin: 10px; 
+}
+
+.header-name {
+  background-color: #fff;
+  font-family: 'Urbanist',Arial, Helvetica, sans-serif;
+  font-size: 30pt;
+  padding-top: 7px;
+  margin-left: -5px;
+  color: #666;  
+
+}
+
+.header-nav {
+  background-color: #fff;
+}
+
+.col-grid {
+  display: grid;
+  grid-template-columns: 100px calc(100vw - 200px) 100px;
+  grid-template-rows: calc(100vh - 120px);
+}
+
+/*.col-grid-item {}*/
+
+#canvas {
+  display: block;
+  border: 1px solid #666;
 }
 
 .header{
   background-color: #fff;
   grid-area: hd;
-}
-
-.sidebarLeft{
-  grid-area: sl;
-  background-color: #fff;
-}
-
-.sidebarRight{
-  grid-area: sr;
-  background-color: #fff;
-}
-
-.container {  display: grid;
-  display: grid;
-  grid-template-columns: repeat(2, 1fr 2fr);
-  gap: 0.1rem;
-  grid-area: mn;
 }
 
 #mainColr, #complColr {
@@ -63,14 +79,6 @@ canvas {
   background-color: #fff;
   color: #3F367B;
   font-size: 14px;
+  text-align: center;
+  padding-top: 14px;
 }
-
-.box {
-  background-color: #eee;
-  display: grid;
-  place-content: center;
-}
-
-.box:first-child {
-  grid-column: 1/9;  /* all 8 columns */
-  }
