@@ -4,22 +4,45 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Complimentary Colorpicker</title>
-
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Urbanist:wght@800&display=swap" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="style.css">
-
     <script src="libraries/p5.min.js"></script>
-   
   </head>
 
   <body>
-    <header class="header el"></header>
-    <aside class="sidebarLeft el" id="mainColr"></aside>
-    <main class="container" id="canvas">
-      <div class="box">
-        <script src="sketch.js"></script>
+    <div class="container-grid">
+      <!--First Container Item-Header-->
+      <div class="container-item">
+        <div class="header-grid">
+          <div class="header-grid-item header-logo"></div>
+          <div class="header-grid-item header-name">Neil</div>
+          <div class="header-grid-item header-nav"></div>
+        </div>
       </div>
-    </main>
-    <aside class="sidebarRight el" id="complColr"></aside>
-    <footer class="footer el">Complimentary Colorpicker v0.6 by Neil</footer>
+      
+      <!--Second Container Item-Content-->
+      <div class="container-item"> 
+        <div class="col-grid">
+          <!--First ColGrid Item-leftside-->
+          <div class="col-grid-item" id="mainColr"></div>
+          <!--Second ColGrid Item-colorblock-->
+          <div class="col-grid-item" id="canvas">
+            <script src="sketch.js"></script>
+          </div>
+          <!--Third ColGrid Item-rightside-->
+          <div class="col-grid-item" id="complColr"></div>
+        </div>
+      </div>
+    
+      <!--Third Container Item-Footer-->
+      <div class="container-item">
+        <div class="footer">
+          Complimentary Colorpicker v0.7 by Neil
+        </div>
+      </div>
+    </div>
+    
   </body>
 </html>
